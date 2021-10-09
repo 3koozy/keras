@@ -147,6 +147,7 @@ def image_dataset_from_directory(directory,
     - if `color_mode` is `rgba`,
       there are 4 channel in the image tensors.
   """
+  print("Allowed image formats: ",ALLOWLIST_FORMATS)
   if 'smart_resize' in kwargs:
     crop_to_aspect_ratio = kwargs.pop('smart_resize')
   if kwargs:
